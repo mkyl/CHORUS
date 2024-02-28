@@ -1,0 +1,43 @@
+id, type, comment
+2, wrong,
+7, better, list of roman empererors generals and rebels so MilitaryPerson is closer than Monarch
+9, better, clear case
+13, worse, mixed list of countries and states so Country is worse than AdministrativeRegion
+19, wrong, non-existent match
+20, wrong, sampling should fix this
+22, wrong, no such thing as historical person
+23, no prediction,
+37, better, list of archaelogical sites so Temple is better than Monarch
+47, better, clear case
+65, better, clear case
+81, worse, list of Novels so Book is worse than Novel
+86, ambigious, not sure about this one
+103, better, clear case
+111, better, list includes Walt Disney and Paul Dirac so closer to Person than Scientist
+113, better, clear case
+123, close, maps to correct class AcademicJournal
+126, wrong, not sure why it predicts AtomicTheory as a type
+130, better, clear case
+132, better, the rows of election results are PoliticalParty not themeselves Election
+134, no prediction,
+136, better,
+139, close, maps to correct class Wrestler
+154, better,
+155, better,
+161, better,
+173, wrong, sampling
+176, better,
+186, close, maps to worse class Media
+192, better
+195, wrong, sampling
+202, better,
+204, better,
+209, close, maps to worse class Media
+211, better,
+217, ambigious, list of the population of countries and territories we say population expert says country
+219, no prediction,
+224, close, maps to correct class Bird
+226, better,
+227, 4 , maps to correct class PoliticalParty
+229, worse,
+232, better,

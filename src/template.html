@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ef8a62">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0px 0px 0px 0px;
+        }
+
+        header {
+            background-color: #ef8a62;
+            margin: 0 auto;
+        }
+
+        footer {
+            color: #999999;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ heading }}</h1>
+            <em>{{ paragraph }}</em>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2> Datasets outline </h2>
+            <ul>
+                {% for dataset in datasets %}
+                <li> <a href="#{{dataset.title}}"> {{dataset.title}} </a> </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="container">
+            <h2> Inferred Schemas </h2>
+            {% for dataset in datasets %}
+            <h3 name="{{dataset.title}}"> {{dataset.title}} </h3>
+            <dl class="row">
+                <dt class="col-sm-3">DBPedia.org Schema</dt>
+                <dd class="col-sm-9">{{dataset.class}}</dd>
+            </dl>
+            {{dataset.summary}}
+            <table class="table table-striped table-condensed">
+                <tr>
+                    <th>Example value</th>
+                    <th>Column description</th>
+                </tr>
+                {% for field in dataset.fields %}
+                <tr>
+                    <td>{{ field.description }}</td>
+                    <td>{{ field.value }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <hr>
+            Generated at {{iso_date_time}} in {{runtime | round(1) }} seconds.
+            <div>
+    </footer>
+</body>
+
+</html>
