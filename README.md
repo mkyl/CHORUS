@@ -10,4 +10,4 @@ The folders are structured as follows:
 - `datasets`: benchmarks files used in this study
 - `results`: outputs of experiments as they appear in the paper
 - `scripts`: code for experiments involving third-party tools
-- `artifacts`: outputs of the experiments. You can download this folder at [this link](url).
+- `artifacts`: outputs of the experiments. You can download this folder at [this link](https://www.dropbox.com/scl/fi/555v71lverufsit6tidbq/chorus-artifacts.tar.xz?rlkey=jq423g2jbam88wtd5ta5glmwb&dl=0).
