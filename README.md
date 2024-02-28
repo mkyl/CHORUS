@@ -1,7 +1,7 @@
 # Experiment code for CHORUS
 
 This repository contains the code for the experiments in the paper "*CHORUS:
-Foundation Models for Unified Data Discovery and Exploration*" to appear in VLDB 2025.
+Foundation Models for Unified Data Discovery and Exploration*" to appear in VLDB 2024.
 
 The folders are structured as follows:
 
