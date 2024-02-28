@@ -139,9 +139,9 @@ Complete the correct Pandas merge command. `pd.merge(df1, df2, left_on="""
 import time
 import json
 import requests
-API_TOKEN = "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"
+API_TOKEN = "your api token"
 headers = {"Authorization": f"Bearer {API_TOKEN}","Content-Type": "application/json"}
-API_URL = "https://wmfwgpirm8b4ievh.us-east-1.aws.endpoints.huggingface.cloud"
+API_URL = "your URL ending in .endpoints.huggingface.cloud"
 
 ##see https://huggingface.co/docs/api-inference/detailed_parameters
 ## for adding parameters under text_generation
